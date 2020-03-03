@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-wrap">
+      <header class="head-wrap">
+        <div class="vid-div">
+          <video
+            autoplay
+            muted
+            loop
+            src="/img/Time Lapse Video of People Inside The Grocery.mp4"
+          ></video>
+        </div>
+        <div class="title"><h1>Shopping List</h1></div>
+      </header>
+      <section class="sec-wrap">
+        <div class="the-inputs">
+          <input
+            id="user-input"
+            type="text"
+            placeholder="items"
+            autocomplete="off"
+            autofocus
+          />
+          <input
+            id="quantity-input"
+            type="text"
+            placeholder="quantity"
+            autocomplete="off"
+          />
+          <button id="btn-add-list">ADD TO</button>
+        </div>
+        <div class="table-div">
+          <table id="tbl" class="content-table">
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Check</th>
+              <th>Delete</th>
+            </tr>
+            <!-- <tr>
+              <td>banana</td>
+              <td>4</td>
+              <td><button class="btn-not-checked"></button></td>
+              <td><button class="btn-del"></button></td>
+            </tr>
+            <tr>
+              <td>banana</td>
+              <td>4</td>
+              <td><button>btn</button></td>
+              <td><button>btn</button></td>
+            </tr>
+            <tr>
+              <td>banana</td>
+              <td>4</td>
+              <td><button>btn</button></td>
+              <td><button>btn</button></td>
+            </tr>
+            <tr>
+              <td>banana</td>
+              <td>4</td>
+              <td><button>btn</button></td>
+              <td><button>btn</button></td>
+            </tr>
+            <tr>
+              <td>banana</td>
+              <td>4</td>
+              <td><button>btn</button></td>
+              <td><button>btn</button></td>
+            </tr> -->
+          </table>
+        </div>
+        <button id="delete-all-btn">DELETE ALL</button>
+      </section>
+      <footer class="foot-wrap">
+        <div class="footer-overlay"></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

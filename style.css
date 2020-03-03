@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main-wrap {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.head-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-basis: 30%;
+  background-color: crimson;
+  overflow: hidden;
+  border-bottom: 4px solid #039671;
+}
+
+video {
+  width: 100vw;
+}
+
+.title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(235, 145, 115, 0.4);
+  color: rgb(243, 235, 235);
+  font-size: 20px;
+}
+
+.sec-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  flex-basis: 100%;
+  background-color: rgb(100, 149, 237);
+}
+
+.the-inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 15px 0;
+}
+
+#user-input,
+#quantity-input {
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  margin: 2px;
+  padding: 4px;
+  outline: none;
+  color: whitesmoke;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  background-color: rgb(100, 149, 237);
+  border-bottom: 2px solid rgb(190, 132, 112);
+  /* box-shadow: 0px 10px 20px -12px black; */
+}
+
+#quantity-input {
+  width: 80px;
+}
+
+#user-input::placeholder,
+#quantity-input::placeholder {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#btn-add-list {
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  color: #039671;
+  font-weight: 900;
+  outline: none;
+  border-bottom: 2px solid rgb(190, 132, 112);
+}
+
+#delete-all-btn {
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  color: rgb(233, 43, 81);
+  font-weight: 900;
+  outline: none;
+  border-bottom: 2px solid rgb(190, 132, 112);
+}
+
+.table-div {
+  position: relative;
+  max-height: 200px;
+  overflow: scroll;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom: 2px solid rgb(235, 145, 115);
+}
+
+.content-table {
+  margin: 10px 0;
+  font-size: 0.9em;
+  min-width: 450px;
+  border-collapse: collapse;
+  margin-bottom: 5%;
+  box-shadow: 0px 10px 20px -6px black;
+}
+
+.content-table tr th {
+  position: sticky;
+  top: 0;
+  text-align: left;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #039671;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tr {
+  border-bottom: 1px solid rgb(173, 172, 172);
+  color: #015c45;
+  font-weight: 600;
+}
+
+.content-table tr:nth-of-type(odd) {
+  background-color: rgb(233, 233, 233);
+}
+
+.content-table tr:nth-of-type(even) {
+  background-color: rgb(100, 149, 237);
+}
+
+.content-table tr:last-of-type {
+  border-bottom: 4px solid #039671;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.btn-not-checked,
+.btn-checked,
+.btn-del-row {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+
+.btn-not-checked {
+  background: url(img/sign-question-icon_34359.png);
+  background-size: cover;
+}
+
+.btn-checked {
+  background: url(img/sign-check-icon_34365.png);
+  background-size: cover;
+}
+
+.btn-del-row {
+  background: url(img/sign-error-icon_34362.png);
+  background-size: cover;
+}
+
+.btn-not-checked:hover,
+.btn-del-row:hover {
+  cursor: pointer;
+}
+
+/* .btn-check: {
+  background: url(img/sign-check-icon_34365.png);
+} */
+
+.foot-wrap {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  flex-basis: 30%;
+  background-color: darksalmon;
+  background: url(/img/groceries-bg.jp.jpg) no-repeat fixed bottom;
+  background-size: cover;
+  border-top: 4px solid #039671;
+}
+
+.footer-overlay {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(235, 145, 115, 0.4);
+}
