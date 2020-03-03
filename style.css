@@ -202,7 +202,7 @@ video {
   width: 100vw;
   flex-basis: 30%;
   background-color: darksalmon;
-  background: url(/img/groceries-bg.jp.jpg) no-repeat fixed bottom;
+  background: url(img/groceries-bg.jp.jpg) no-repeat fixed bottom;
   background-size: cover;
   border-top: 4px solid #039671;
 }

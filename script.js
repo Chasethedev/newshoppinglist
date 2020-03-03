@@ -4,7 +4,7 @@ function addRow() {
   let tbl = document.getElementById("tbl");
   let items = document.getElementById("user-input").value;
   let qty = document.getElementById("quantity-input").value;
-  // console.log(items, qty);
+  
   btnNotChecked = document.createElement("button");
 
   btnNotChecked.classList.add("btn-not-checked");
